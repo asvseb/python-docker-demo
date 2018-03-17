@@ -1,0 +1,10 @@
+version: '3'
+services:
+  pydockertestv1:
+    build: .
+    links:
+      - redis
+    ports:
+      - "9300:5000"
+  redis:
+    image: redis:latest
