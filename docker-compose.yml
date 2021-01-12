@@ -5,6 +5,6 @@ services:
     links:
       - redis
     ports:
-      - "9300:5000"
+      - "5000:5000"
   redis:
     image: redis:latest
